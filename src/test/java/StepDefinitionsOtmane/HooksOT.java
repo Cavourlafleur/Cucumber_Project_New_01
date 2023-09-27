@@ -1,11 +1,11 @@
 package StepDefinitionsOtmane;
 
-import Utilities.DriverClass;
+import UtilitiesOT.DriverClass;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
-public class HooksOtmane {
+public class HooksOT {
 
     @Before // Runs before each scenario
     public void beforeScenario(){

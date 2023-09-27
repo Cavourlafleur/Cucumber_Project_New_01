@@ -12,4 +12,4 @@ Feature: User Login
 
     Examples:
       | email               | password |
-      | Fesvegas@gmail.com | Fesvegas@ |
+      | Fevegas@gmail.com | Fesvegas@ |

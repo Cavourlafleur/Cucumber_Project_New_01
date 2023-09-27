@@ -1,13 +1,13 @@
 package PagesOtmane;
 
-import Utilities.DriverClass;
-import Utilities.MyMethods;
+import UtilitiesOT.DriverClass;
+import UtilitiesOT.MyMethods;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DialogProjectOtmane extends MyMethods {
-    public DialogProjectOtmane() {
+public class DialogProjectOt extends MyMethods {
+    public DialogProjectOt() {
         PageFactory.initElements(DriverClass.getDriver(), this);
     }
 
