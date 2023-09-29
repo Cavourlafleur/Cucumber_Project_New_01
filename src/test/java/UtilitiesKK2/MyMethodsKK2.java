@@ -1,4 +1,4 @@
-package UtilitiesKK;
+package UtilitiesKK2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -8,17 +8,18 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-public class MyMethodsKK {
+public class MyMethodsKK2 {
 
 
 
-    public WebDriverWait wait = new WebDriverWait(DriverClassKK.getDriver(), Duration.ofSeconds(30));
+    public WebDriverWait wait = new WebDriverWait(DriverClassKK2.getDriver(), Duration.ofSeconds(80));
 
 
     public void clickMethod(WebElement element) {
         waitUntilClickable(element);
         element.click();
     }
+
 
     public void sendKeysMethod(WebElement element, String text) {
         waitUntilVisible(element);
@@ -35,7 +36,9 @@ public class MyMethodsKK {
 
     public void assertSuccessMessage(WebElement element) {
         waitUntilVisible(element);
-        Assert.assertTrue(element.getText().contains("3"));
+        Assert.assertTrue(element.getText().contains("Your order on Xu Clothing is complete."));
+
+
     }
 
     public void waitForNumberOfElements(By locator, int number){
