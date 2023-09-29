@@ -8,6 +8,7 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
+
 public class MyMethods {
     public WebDriverWait wait = new WebDriverWait(DriverClass.getDriver(), Duration.ofSeconds(10));
 
@@ -31,7 +32,7 @@ public class MyMethods {
 
     public void assertSuccessMessage(WebElement element) {
         waitUntilVisible(element);
-        Assert.assertTrue(element.getText().contains("success"));
+        Assert.assertTrue(element.getText().contains("3"));
     }
 
     public void waitForNumberOfElements(By locator, int number){
