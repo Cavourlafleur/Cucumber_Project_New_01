@@ -248,8 +248,73 @@ public class Dialog extends MyMethodsKK2 {
     }
 
 
+    @FindBy(xpath = "//a[@title=\"Contact us\"]")
+    private WebElement contactUs;
 
+    @FindBy(xpath = "//select[@name=\"id_contact\"]")
+    private WebElement subjectHeading;
 
+    @FindBy(xpath = "//option[@value=\"2\"]")
+    private WebElement customerService;
 
+    @FindBy(xpath = "//select[@name=\"id_order\"]")
+    private WebElement orderReferance;
 
+    @FindBy(xpath = "//option[@value=\"257\"]")
+    private WebElement getOrderReferance2;
+
+    @FindBy(id = "message")
+    private WebElement message;
+
+    @FindBy(id = "submitMessage")
+    private WebElement sendButton;
+
+    @FindBy(xpath = "(//span[text()=\"-- Choose --\"])[13]")
+    private WebElement chooseProduct;
+
+    @FindBy(xpath = "(//option[@value=\"3\"])[12]")
+    private WebElement chooseProduct2;
+
+    @FindBy(xpath = "class=\"alert alert-success\"")
+    private WebElement successMess;
+
+    public WebElement getSuccessMess() {
+        return successMess;
+    }
+
+    public WebElement getContactUs() {
+        return contactUs;
+    }
+
+    public WebElement getSubjectHeading() {
+        return subjectHeading;
+    }
+
+    public WebElement getCustomerService() {
+        return customerService;
+    }
+
+    public WebElement getOrderReferance() {
+        return orderReferance;
+    }
+
+    public WebElement getGetOrderReferance2() {
+        return getOrderReferance2;
+    }
+
+    public WebElement getMessage() {
+        return message;
+    }
+
+    public WebElement getSendButton() {
+        return sendButton;
+    }
+
+    public WebElement getChooseProduct() {
+        return chooseProduct;
+    }
+
+    public WebElement getChooseProduct2() {
+        return chooseProduct2;
+    }
 }
