@@ -1,14 +1,15 @@
-package Pages;
+package PagesKK;
 
-import Utilities.DriverClass;
-import Utilities.MyMethods;
+
+import UtilitiesKK.DriverClassKK;
+import UtilitiesKK.MyMethodsKK;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Dialog extends MyMethods {
+public class Dialog extends MyMethodsKK {
     public Dialog() {
-        PageFactory.initElements(DriverClass.getDriver(),this);
+        PageFactory.initElements(DriverClassKK.getDriver(),this);
     }
     @FindBy(css = "a[title=\"Log in to your customer account\"]")
     private WebElement SignIn;
@@ -155,10 +156,6 @@ public class Dialog extends MyMethods {
     public WebElement getCreateAnButton() {
         return CreateAnButton;
     }
-
-
-
-
 
 
 }

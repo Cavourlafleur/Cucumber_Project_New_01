@@ -1,7 +1,8 @@
-package StepDefinitions;
+package StepDefinitionsKK;
 
-import Pages.Dialog;
-import Utilities.DriverClass;
+import PagesKK.Dialog;
+
+import UtilitiesOT.DriverClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -10,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
 
-public class _task06 extends DriverClass {
+public class _task06  {
 
     Dialog dialog = new Dialog();
     private static WebDriver driver;
